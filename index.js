@@ -12,7 +12,7 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 
 function greet(time) {
-  const hour = parseInt(time.slice(0, 2));
+  let hour = parseInt(time.slice(0, 2));
   if (hour > 12) {
     return "Good Morning";
   } else if (12 <= hour <= 17 )  {
@@ -23,3 +23,6 @@ function greet(time) {
 }
 
 /* Write your implementation of displayMessage() */
+function displayMessage(greeting) {
+  document.getElementById("greeting").textContent = greeting;
+}
